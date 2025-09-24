@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>to-do</title>
+  </head>
+  <body>
+    <div class="h-[100vh] bg-blue-700 flex justify-center items-center">
+      <div class="bg-blue-400 rounded-2xl p-10 w-1/3 flex justify-center flex-col">
+        <h1 class="text-5xl text-center">TO DO ✔</h1>
+        <div class="m-2 p-3 bg-blue-50 rounded-2xl flex flex-row gap-5">
+          <input
+            type="text"
+            placeholder="write your task ..."
+            class="form-control"
+            id="todo_value"
+          />
+          <button class="btn btn-info" id="todo_add">+</button>
+        </div>
+        <ul class="h-max p-3 bg-blue-100 rounded-3xl m-2" id="todo_list"></ul>
+        <div class="w-max mx-auto rounded-2xl btn btn-danger" id="todo_remove">
+          Clear all 🗑
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/To-Do.ts"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
