@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoItem from "./TodoItem";
-import type { TodoType } from "./Todo.Types";
+import type { TodoType } from "./Todo.types";
 import Swal from "sweetalert2";
 
 const TodoPlus = () => {
